@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Forever</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="sheet.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#"onclick="reload()" class="logo">
+                <img src="./assets/Untitled design.png" alt="logo">
+            </a>
+            <div class="nav-links ">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="national" onclick="onNavItemClick('national')">National</li>
+                    <li class="hover-link nav-item" id="international" onclick="onNavItemClick('international')">International</li>
+                    <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input id="input-text" type="text" class="news-input" placeholder="News">
+                <button id="search-btn" class="search-btn">Search</button>
+
+            </div>
+        </div>
+    </nav>
+    <main id="news-card">
+        <div id="cards-container" class ="cards-container container flex">
+            <!-- <div class="card">
+                <div class="card-header">
+                    <img id="news-img" src="https://via.placeholder.com/400x200"alt="img">
+                </div>
+                <div class="card-content">
+                    <h3 id="title">Title</h3>
+                    <h4 id="source">Date</h4>
+                    <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit rerum saepe eligendi obcaecati harum quo amet officiis eum autem expedita.</p>
+                </div>
+            </div> -->
+        </div>
+    </main>
+    <template id="temp-news-card">
+         <div class="card">
+                <div class="card-header">
+                    <img id="news-img" src="https://via.placeholder.com/400x200"alt="img">
+                </div>
+                <div class="card-content">
+                    <h3 id="title">Title</h3>
+                    <h4 id="source">Date</h4>
+                    <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit rerum saepe eligendi obcaecati harum quo amet officiis eum autem expedita.</p>
+                </div>
+            </div>
+    </template>
+   
+</body>
+</html>
